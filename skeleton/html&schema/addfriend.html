@@ -1,0 +1,15 @@
+<a href='/'>Home</a>
+<head>
+    <title>Add a friend!</title>
+</head>
+    <body>
+        <div class="title">
+            <h1>Add a friend to your friend list</h1>
+        </div>
+        <div id="content"></div>
+            <form method="post" action="{{ url_for('addfriend') }}">
+                <label for="friend_email">Please enter the email of the user:</label>
+                <input type="email" name="friend_email" /><br />
+                <input type="submit" value = "add"/>
+            </form>
+    </body>
